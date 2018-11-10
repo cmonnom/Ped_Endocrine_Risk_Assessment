@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}Registered Guests{% endblock %}
+{% block head %}
+  {{ super() }}
+{% endblock %}
+{% block content %}
+
+  <h1>Select A Param</h1>
+
+{#    <form action="/action_page.php" method="get">#}
+{#        {% for col in cols%}#}
+{#            <input type="checkbox" name="col" value="col"> {{ col }}<br>#}
+{#        {% endfor %}#}
+{#        {{ tag }}#}
+{#    </form>#}
+   {{graph | safe}}
+   {{attrs}}
+
+{% endblock %}
